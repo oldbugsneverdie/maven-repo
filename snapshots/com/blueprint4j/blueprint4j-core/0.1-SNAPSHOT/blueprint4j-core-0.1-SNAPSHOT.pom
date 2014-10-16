@@ -14,13 +14,13 @@
         <repository>
             <id>repo</id>
             <uniqueVersion>false</uniqueVersion>
-            <url>file:///home/jan/Documenten/projecten/maven-repo/releases</url>
+            <url>file://${project.build.directory}/../../../maven-repo/releases</url>
         </repository>
         <!-- Distribute snapshots to my local file system before pushing to github -->
         <snapshotRepository>
             <id>snapshot-repo</id>
             <uniqueVersion>false</uniqueVersion>
-            <url>file:///home/jan/Documenten/projecten/maven-repo/snapshots</url>
+            <url>file://${project.build.directory}/../../../maven-repo/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <dependencies>
